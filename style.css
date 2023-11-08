@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#header #img1{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+}
+#header #img2{
+    position: relative;
+    height: 400px;
+    width: 500px;
+    left: 190px;
+}
+
+hr{
+    margin-top: 10px;
+    margin-left: 80px;
+    height: 3px;
+    width: 90%;
+    background-color: black;
+}
+
+#heading {
+    margin-top: 20px;
+    text-align: center;
+    color: rgba(9, 102, 85, 1);
+    -webkit-text-stroke: 0.2px rgba(168, 241, 212, 0.595);
+    font-family: "Kaushan Script"; 
+    font-size: 40px;
+  }
+
+#input-div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+  
+input[type="text"] {
+    height: 45px;
+    width: 20%;
+    padding: 0.5rem;
+    /* border-radius: 5px; */
+}
+  
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    /* border-radius: 10px; */
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+  }
+  
+button:hover {
+    background-color: #555;
+}
+
+#head-meal{
+    margin-top: 200px;
+    margin-left: 150px;
+    font-family: "Merienda One";
+    font-size: 30px;
+}
+
+#pop-meal{
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Merienda One";
+    font-size: 30px;
+    display: none;
+}
+
+#random-meal img{
+    margin: 10px;
+    height: 400px;
+    width: 400px;
+}
+
+#meal-div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#meal-name{
+    font-family: "Merienda One";
+    font-size: 20px;
+    text-align: center;
+}
+
+#popular-meals{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.meal-img{
+    height: 350px;
+    width: 350px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.meal-name{
+    text-align: center;
+    font-family: "Merienda One";
+}
+
+#popup{
+    display: none;
+    position: absolute;
+    height: 150vh;
+    width: 100vw;
+    /* top: 50vh; */
+    border: 2px solid red;
+    background-color: rgba(0, 0, 0, 0.703);
+}
+
+.ingredients-div{
+    font-family: "Merienda One";
+    height: 60vh;
+    width: 80vh;
+    margin: auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 50px;
+    font-size: 30px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.641);
+    -webkit-text-stroke: 0.2px green;
+
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  p {
+    font-family: "Merienda One";
+    font-size: 20px;
+    margin: 0;
+  }
+
+@media (max-width:600px) {
+    #header #img1{
+        display: none;
+    }
+    #header #img2{
+        height: 150px;
+        width: 250px;
+    }
+}
